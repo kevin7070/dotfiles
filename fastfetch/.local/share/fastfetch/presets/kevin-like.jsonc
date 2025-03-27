@@ -1,0 +1,49 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  OS
+//
+//  by Bina
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "arch_small", // search for logos: fastfetch --list-logos or --print-logos
+        "padding": {
+            "top": 1
+        },
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "kernel",
+            "key": " 🖥️",
+            "keyColor": "31",
+        },
+        "break",
+        {
+            "type": "cpu",
+            "format": "{1} ({3}) @ {7} GHz",
+            "key": "  ",
+            "keyColor": "33",
+        },
+        {
+            "type": "gpu",
+            "format": "{1} {2} @ {12} GHz",
+            "key": " 󰢮 ",
+            "keyColor": "33",
+        },
+        {
+            "type": "memory",
+            "key": "  ",
+            "keyColor": "33",
+        },
+        {
+            "type": "weather",
+            "key": " ☕",
+            "keyColor": "33",
+        },
+    ]
+}
