@@ -55,7 +55,7 @@ elif [[ "$(uname)" == "Linux" ]]; then
     # Linux 設定
     #
     # fastfetch
-    fastfetch --config kevin-like
+    # fastfetch --config kevin-like
     # Arch news
     alias news="curl -s https://archlinux.org/news/ | lynx -stdin"
     
