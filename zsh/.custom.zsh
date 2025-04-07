@@ -1,3 +1,5 @@
+# load customs
+# [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 if [[ "$(uname)" == "Darwin" ]]; then
     # macOS 設定
