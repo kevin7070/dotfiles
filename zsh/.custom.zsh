@@ -35,6 +35,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias t7="tree -L 7 -C"
     alias t8="tree -L 8 -C"
 
+    # lazygit
+    alias lg="rm -rf .git/index.lock && lazygit"
+
     # Pyenv
     export PYENV_ROOT="$HOME/.pyenv"
     [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -87,6 +90,9 @@ elif [[ "$(uname)" == "Linux" ]]; then
     alias t6="tree -L 6 -C"
     alias t7="tree -L 7 -C"
     alias t8="tree -L 8 -C"
+
+    # lazygit
+    alias lg="rm -rf .git/index.lock && lazygit"
 
     # zoxide
     eval "$(zoxide init zsh)"
