@@ -7,6 +7,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # Paths
     export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"  # brew
     export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"  # openjdk
+    export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"  #postgresql
 
     # Searching and File Management
     alias ff="fzf | xargs nvim"
