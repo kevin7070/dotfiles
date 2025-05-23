@@ -57,6 +57,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     # zoxide
     eval "$(zoxide init zsh)"
     alias ls="eza --icons"
+
+    # Tmux
+    export TMUX_COPY_CMD="pbcopy"
 elif [[ "$(uname)" == "Linux" ]]; then
     # Linux 設定
     #
@@ -113,4 +116,9 @@ elif [[ "$(uname)" == "Linux" ]]; then
     [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
     eval "$(pyenv init --path)"
     eval "$(pyenv init - zsh)"
+
+    # Tmux (Wayland) wl-clipboard package needed
+    if command -v wl-copy &> /dev/null; then
+        export TMUX_COPY_CMD="wl-copy"
+    fi
 fi
