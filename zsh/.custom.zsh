@@ -10,8 +10,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"  #postgresql
 
     # Searching and File Management
-    alias ff="fzf --exit-0 | xargs -r nvim"
-    fd() {
+    alias ffile="fzf --exit-0 | xargs -r nvim"
+    fdir() {
     local dir
     dir=$(find . -type d | fzf) && cd "$dir"
     }
@@ -67,8 +67,8 @@ elif [[ "$(uname)" == "Linux" ]]; then
     alias news="curl -s https://archlinux.org/news/ | lynx -stdin"
     
     # Searching and File Management
-    alias ff="fzf --exit-0 | xargs -r nvim"  # Use fzf to open files in nvim
-    fd() {
+    alias ffile="fzf --exit-0 | xargs -r nvim"  # Use fzf to open files in nvim
+    fdir() {
         local dir
         dir=$(find . -type d | fzf) && cd "$dir"
     }
