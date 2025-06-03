@@ -119,4 +119,7 @@ elif [[ "$(uname)" == "Linux" ]]; then
     if command -v wl-copy &> /dev/null; then
         export TMUX_COPY_CMD="wl-copy"
     fi
+
+    # Launch VSCode with Electron Workarounds
+    alias code="code --ozone-platform-hint=auto --disable-gpu 2>/dev/null"
 fi
