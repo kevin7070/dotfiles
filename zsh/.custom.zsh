@@ -35,6 +35,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias t6="tree -L 6 -C"
     alias t7="tree -L 7 -C"
     alias t8="tree -L 8 -C"
+    alias trepo="git ls-files --cached --others --exclude-standard | tree --fromfile"
 
     # lazygit
     alias lg="rm -rf .git/index.lock && lazygit"
@@ -92,6 +93,7 @@ elif [[ "$(uname)" == "Linux" ]]; then
     alias t6="tree -L 6 -C"
     alias t7="tree -L 7 -C"
     alias t8="tree -L 8 -C"
+    alias trepo="git ls-files --cached --others --exclude-standard | tree --fromfile"
 
     # lazygit
     alias lg="rm -rf .git/index.lock && lazygit"
