@@ -23,6 +23,11 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias rm="rm -i"  # Confirm before deleting
     alias o="open ."  # Open current directory in Finder (macOS)
 
+    # Docker compose
+    alias dcdown="docker compose -f docker-compose.dev.yml down -v"
+    alias dcup="docker compose -f docker-compose.dev.yml up -d"
+    alias dcrestart="docker compose -f docker-compose.dev.yml restart"
+
     # tree
     alias t="tree -C"
     alias ta="tree -a -C"
@@ -80,6 +85,11 @@ elif [[ "$(uname)" == "Linux" ]]; then
     alias cp="cp -i"
     alias rm="rm -i"
     alias o="xdg-open ."
+
+    # Docker compose
+    alias dcdown="docker compose -f docker-compose.dev.yml down -v"
+    alias dcup="docker compose -f docker-compose.dev.yml up -d"
+    alias dcrestart="docker compose -f docker-compose.dev.yml restart"
 
     # tree
     alias t="tree -C"
