@@ -8,8 +8,8 @@
 # - platform/  : Platform-specific configurations (macOS/Linux)
 # ============================================================================
 
-# Determine the config directory
-ZSH_CUSTOM_DIR="${0:a:h}"
+# Determine the config directory (now using XDG standard location)
+ZSH_CUSTOM_DIR="$HOME/.config/zsh"
 
 # Load common configurations (shared across all platforms)
 source "${ZSH_CUSTOM_DIR}/common/docker.zsh"
