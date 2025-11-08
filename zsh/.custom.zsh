@@ -16,6 +16,7 @@ source "${ZSH_CUSTOM_DIR}/common/docker.zsh"
 source "${ZSH_CUSTOM_DIR}/common/dev-tools.zsh"
 source "${ZSH_CUSTOM_DIR}/common/file-nav.zsh"
 source "${ZSH_CUSTOM_DIR}/common/tree.zsh"
+source "${ZSH_CUSTOM_DIR}/common/openwrt.zsh"
 
 # Load platform-specific configurations
 if [[ "$(uname)" == "Darwin" ]]; then
